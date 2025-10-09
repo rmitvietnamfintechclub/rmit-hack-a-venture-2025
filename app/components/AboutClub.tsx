@@ -165,7 +165,7 @@ export const AboutClub = () => {
 
       {/* --- UNIFIED STATISTICS SECTION --- */}
 
-      <h1 className="text-3xl md:text-6xl font-bold text-center text-color-gradient md:py-2 max-md:mt-8">
+      <h1 className="text-[1.75rem] md:text-6xl font-bold text-center text-color-gradient md:py-2 max-md:mt-8">
         Our key metrics
       </h1>
       <div
@@ -209,7 +209,7 @@ export const AboutClub = () => {
           variants={titleVariants}
           transition={{ duration: 1.3 }}
         >
-          <h1 className="text-3xl md:text-6xl font-bold text-center text-color-gradient max-md:my-[24px] md:my-[48px]">
+          <h1 className="text-[1.75rem] md:text-6xl font-bold text-center text-color-gradient max-md:my-[24px] md:my-[48px]">
             Our previous activities
           </h1>
         </motion.div>

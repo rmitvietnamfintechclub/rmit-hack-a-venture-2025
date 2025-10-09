@@ -146,7 +146,7 @@ export const HeroSection = () => {
           <h1 className="text-white drop-shadow-text font-extrabold mt-[40px]">
             RMIT 2025
           </h1>
-          <h1 className="text-color-gradient drop-shadow-text font-extrabold mt-[20px]">
+          <h1 className="text-color-gradient drop-shadow-text font-extrabold mt-[10px] md:mt-[20px]">
             Hack-A-Venture
           </h1>
         </div>
