@@ -134,9 +134,7 @@ const TrainingWorkshopTimeline = () => {
         To support participants, Hack-A-Venture 2025 will provide a series of
         workshops
       </p>
-      <p className="text-white text-[24px] font-bold">
-        Workshop
-      </p>
+      <p className="text-white text-[24px] font-bold">Workshop</p>
 
       {/* Map over data to render timeline items */}
       <div className="w-full flex flex-col items-center">
@@ -155,7 +153,7 @@ const TrainingWorkshopTimeline = () => {
 
 const RoundedTimelineHeader: React.FC<{ text: string }> = ({ text }) => {
   return (
-    <div className="text-white text-[20px] md:text-[24px] font-semibold py-2 px-6 rounded-full text-2xl shadow-md max-md:mt-[24px] md:mt-[30px] bg-gradient-to-b from-[#F37D12] to-[#FDE309]">
+    <div className="text-black text-[20px] md:text-[24px] font-semibold py-2 px-6 rounded-full text-2xl shadow-md max-md:mt-[24px] md:mt-[30px] bg-gradient-to-b from-[#F37D12] to-[#FDE309]">
       {text}
     </div>
   );
@@ -307,7 +305,7 @@ const MilestoneRound: React.FC<{ rounded: boolean; numberOfOrder: number }> = ({
         rounded
           ? "rounded-full border-[12px] w-[92px] h-[92px]"
           : "rounded-md border-[4px] w-[68px] h-[68px]"
-      } border-[#F37D12] bg-[#FDE309] shadow-md flex items-center justify-center text-[32px] font-bold flex-shrink-0`}
+      } border-[#F37D12] bg-[#FDE309] shadow-md flex items-center justify-center text-[32px] text-black font-bold flex-shrink-0`}
       style={{
         boxShadow: "0 0 5px 7px #291231",
       }}

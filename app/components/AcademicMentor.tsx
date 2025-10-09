@@ -90,7 +90,7 @@ type Mentor = {
 };
 
 const MentorCard = ({ mentor }: { mentor: Mentor }) => (
-  <div className="flex flex-col items-center px-4">
+  <div className="flex flex-col items-center">
     <div className="font-bold text-2xl text-green-color-gradient">
       <span>{mentor.name}</span>
     </div>
@@ -136,7 +136,7 @@ export const AcademicMentor = () => {
   };
 
   return (
-    <div className="px-6 pb-10">
+    <div className="md:px-20 px-4 pb-10">
       <h1 className="max-md:hidden md:block md:text-6xl text-center text-white font-semibold mb-8 drop-shadow-text">
         Hack-A-Venture <span className="text-color-gradient">Academic Mentors</span>
       </h1>
@@ -146,7 +146,7 @@ export const AcademicMentor = () => {
       </h1>
 
       {/* Desktop View: Flex layout */}
-      <div className="hidden md:flex flex-row items-end justify-around gap-6">
+      <div className="hidden md:flex flex-row items-end justify-between gap-6">
         {mentorsData.map((mentor) => (
           <MentorCard key={mentor.name} mentor={mentor} />
         ))}

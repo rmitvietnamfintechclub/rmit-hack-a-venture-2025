@@ -49,7 +49,7 @@ export const HeroSection = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.5, duration: 0.5 }}
             >
-              <div className="w-[420px] lg:w-[490px] text-white text-xl font-medium font-sans text-justify">
+              <div className="w-full lg:w-[490px] text-white text-xl font-medium text-justify">
                 Organized by RMIT Vietnam FinTech Club, <span className="font-bold text-color-gradient">Hack-A-Venture</span> is a
                 hackathon-style innovation competition for{" "}
                 <span className="font-bold text-color-gradient">
@@ -65,23 +65,23 @@ export const HeroSection = () => {
             </motion.h1>
 
             <div className="mt-[40px] flex justify-start gap-4">
-              <button className="w-[12vw] h-[48px] bg-gradient-to-b from-[#F37D12] to-[#FDE309] rounded-[12px] justify-items-center flex justify-center items-center text-white font-semibold font-poppins">
+              <button className="w-[12vw] h-[48px] bg-gradient-to-b from-[#F37D12] to-[#FDE309] rounded-[12px] justify-items-center flex justify-center items-center text-black font-semibold font-poppins">
                 <a href="https://bit.ly/RMITHack-A-Venture2025Handbook" target="_blank" className="no-underline">
                   See Handbook
                 </a>
               </button>
 
-              <button className="w-[12vw] h-[48px] bg-gradient-to-b from-[#F37D12] to-[#FDE309] rounded-[12px] justify-items-center flex justify-center items-center text-white font-semibold font-poppins">
+              <button className="w-[12vw] h-[48px] bg-gradient-to-b from-[#F37D12] to-[#FDE309] rounded-[12px] justify-items-center flex justify-center items-center text-black font-semibold font-poppins">
                 {/* <Button /> */}
                 <a href="https://forms.gle/RCp2kr5zheyp2Gq2A" target="_blank">
                   Join Now
                 </a>
                 <Image
-                  src={"/Vector.png"}
+                  src={"/Arrow.png"}
                   alt="arrow"
                   width={1000}
                   height={1000}
-                  className="ml-[10px] w-[13.5px] h-[13.5px]"
+                  className="ml-[5px] w-[20px] h-auto -rotate-45"
                 />
               </button>
             </div>
@@ -142,16 +142,16 @@ export const HeroSection = () => {
       </div>
 
       <div className="md:hidden px-6">
-        <div className="mb-[16px] text-5xl justify-center text-center">
-          <h1 className="text-white drop-shadow-text font-sans font-extrabold mt-[40px]">
+        <div className="mb-[16px] text-[2.5rem] justify-center text-center">
+          <h1 className="text-white drop-shadow-text font-extrabold mt-[40px]">
             RMIT 2025
           </h1>
-          <h1 className="text-color-gradient drop-shadow-text font-sans font-extrabold mt-[20px]">
+          <h1 className="text-color-gradient drop-shadow-text font-extrabold mt-[20px]">
             Hack-A-Venture
           </h1>
         </div>
 
-        <div className="text-white text-lg my-[16px] font-sans font-medium text-center mx-[20px] mt-[24px]">
+        <div className="text-white text-lg mb-[16px] font-medium text-center mt-[24px]">
           Organized by RMIT Vietnam FinTech Club, <span className="font-bold text-color-gradient">Hack-A-Venture</span> is a
           hackathon-style innovation competition for{" "}
           <span className="font-bold text-color-gradient">
@@ -165,24 +165,24 @@ export const HeroSection = () => {
           solve Vietnam's pressing social challenge!
         </div>
 
-        <div className="flex w-full gap-5 justify-center items-center px-[16px]">
-          <button className="w-full h-[48px] bg-gradient-to-b from-[#F37D12] to-[#FDE309] rounded-[12px] justify-items-center flex justify-center items-center text-white font-semibold font-poppins">
+        <div className="flex w-full gap-5 justify-center items-center">
+          <button className="w-full h-[48px] bg-gradient-to-b from-[#F37D12] to-[#FDE309] rounded-[12px] justify-items-center flex justify-center items-center text-[#000000] font-semibold font-poppins">
             <a href="" target="_blank" className="no-underline">
               See Handbook
             </a>
           </button>
 
-          <button className="w-full h-[48px] bg-gradient-to-b from-[#F37D12] to-[#FDE309] rounded-[12px] justify-items-center flex justify-center items-center text-white font-semibold font-poppins">
+          <button className="w-full h-[48px] bg-gradient-to-b from-[#F37D12] to-[#FDE309] rounded-[12px] justify-items-center flex justify-center items-center text-[#000000] font-semibold font-poppins">
             {/* <Button /> */}
             <a href="" target="_blank">
               Join Now
             </a>
             <Image
-              src={"/Vector.png"}
+              src={"/Arrow.png"}
               alt="arrow"
               width={1000}
               height={1000}
-              className="ml-[10px] w-[13.5px] h-[13.5px]"
+              className="ml-[5px] w-[15px] h-auto -rotate-45"
             />
           </button>
         </div>

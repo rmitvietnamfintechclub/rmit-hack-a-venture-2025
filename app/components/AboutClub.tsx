@@ -87,7 +87,7 @@ export const AboutClub = () => {
       {/* --- UNIFIED "WHO ARE WE" SECTION --- */}
       <div className="w-full flex flex-col md:flex-row items-center justify-start md:gap-[60px] md:px-20 mt-4">
         <div className="w-full md:w-[45vw]">
-          <h1 className="text-color-gradient text-center md:text-left text-3xl md:text-[2rem] font-semibold font-sans drop-shadow-text mb-8 max-md:mb-4">
+          <h1 className="text-color-gradient text-center md:text-left text-3xl md:text-[2rem] font-semibold drop-shadow-text mb-8 max-md:mb-4">
             Competition Organizer
           </h1>
           <h1 className="text-[#2C305F] drop-shadow-club-text text-4xl md:text-[4rem] text-center md:text-left font-black uppercase md:mb-[2rem] mb-[0.75rem]">
@@ -125,7 +125,7 @@ export const AboutClub = () => {
               {coreActivities.map((activity) => (
                 <div
                   key={activity}
-                  className="bg-gradient-to-b from-[#F37D12] to-[#FDE309] px-2 py-3 text-center text-base md:text-sm"
+                  className="bg-gradient-to-b from-[#F37D12] to-[#FDE309] px-2 py-3 text-center text-black text-base md:text-sm"
                 >
                   {activity}
                 </div>
@@ -165,12 +165,12 @@ export const AboutClub = () => {
 
       {/* --- UNIFIED STATISTICS SECTION --- */}
 
-      <h1 className="text-3xl md:text-6xl font-bold font-sans text-center text-color-gradient md:py-2 max-md:mt-8">
+      <h1 className="text-3xl md:text-6xl font-bold text-center text-color-gradient md:py-2 max-md:mt-8">
         Our key metrics
       </h1>
       <div
         ref={ref}
-        className="grid md:grid-cols-3 grid-cols-1 md:px-[10vw] mt-[20px] md:mt-[40px] gap-y-2 md:gap-y-16 w-full justify-items-center font-sans"
+        className="grid md:grid-cols-3 grid-cols-1 md:px-[10vw] mt-[20px] md:mt-[40px] gap-y-2 md:gap-y-16 w-full justify-items-center"
       >
         {statsData.map((stat) => (
           <div
@@ -186,7 +186,7 @@ export const AboutClub = () => {
                 stat.isFeatured
                   ? "md:text-6xl text-3xl"
                   : "md:text-4xl text-3xl"
-              } font-semibold font-sans drop-shadow-text`}
+              } font-semibold drop-shadow-text`}
             >
               <CountUp start={0} end={inView ? stat.value : 0} duration={5}>
                 {({ countUpRef }) => <span ref={countUpRef} />}
@@ -209,7 +209,7 @@ export const AboutClub = () => {
           variants={titleVariants}
           transition={{ duration: 1.3 }}
         >
-          <h1 className="text-3xl md:text-6xl font-bold font-sans text-center text-color-gradient max-md:my-[24px] md:my-[48px]">
+          <h1 className="text-3xl md:text-6xl font-bold text-center text-color-gradient max-md:my-[24px] md:my-[48px]">
             Our previous activities
           </h1>
         </motion.div>

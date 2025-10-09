@@ -235,7 +235,7 @@ const FlipContainer = ({
       {/* Text */}
       <Center py={20}>
         <Text
-          className="md:text-4xl md:ml-0 ml-2 text-lg font-sans font-semibold"
+          className="md:text-4xl md:ml-0 ml-2 text-lg font-semibold"
           fontWeight="light"
           textTransform="uppercase"
           color="white"
