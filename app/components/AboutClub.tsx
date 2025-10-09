@@ -87,10 +87,10 @@ export const AboutClub = () => {
       {/* --- UNIFIED "WHO ARE WE" SECTION --- */}
       <div className="w-full flex flex-col md:flex-row items-center justify-start md:gap-[60px] md:px-20 mt-4">
         <div className="w-full md:w-[45vw]">
-          <h1 className="text-color-gradient text-center md:text-left text-3xl md:text-[2rem] font-semibold font-sans drop-shadow-text mb-4">
+          <h1 className="text-color-gradient text-center md:text-left text-3xl md:text-[2rem] font-semibold font-sans drop-shadow-text mb-8 max-md:mb-4">
             Competition Organizer
           </h1>
-          <h1 className="text-[#2C305F] drop-shadow-club-text text-4xl md:text-[4rem] text-center md:text-left font-black uppercase md:mb-[0.5rem] mb-[0.75rem]">
+          <h1 className="text-[#2C305F] drop-shadow-club-text text-4xl md:text-[4rem] text-center md:text-left font-black uppercase md:mb-[2rem] mb-[0.75rem]">
             <span className="text-[#DCB968]">Fin</span>Tech Club
           </h1>
           <h1 className="text-white drop-shadow-text text-3xl md:text-[4rem] text-center md:text-left font-black uppercase md:mb-[1.5rem] mb-[0.75rem]">
