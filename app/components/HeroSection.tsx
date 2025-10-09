@@ -142,7 +142,7 @@ export const HeroSection = () => {
       </div>
 
       <div className="md:hidden px-6">
-        <div className="mb-[16px] text-[2.5rem] justify-center text-center">
+        <div className="mb-[16px] text-[2.25rem] justify-center text-center">
           <h1 className="text-white drop-shadow-text font-extrabold mt-[40px]">
             RMIT 2025
           </h1>
@@ -167,14 +167,14 @@ export const HeroSection = () => {
 
         <div className="flex w-full gap-5 justify-center items-center">
           <button className="w-full h-[48px] bg-gradient-to-b from-[#F37D12] to-[#FDE309] rounded-[12px] justify-items-center flex justify-center items-center text-[#000000] font-semibold font-poppins">
-            <a href="" target="_blank" className="no-underline">
+            <a href="https://bit.ly/RMITHack-A-Venture2025Handbook" target="_blank" className="no-underline">
               See Handbook
             </a>
           </button>
 
           <button className="w-full h-[48px] bg-gradient-to-b from-[#F37D12] to-[#FDE309] rounded-[12px] justify-items-center flex justify-center items-center text-[#000000] font-semibold font-poppins">
             {/* <Button /> */}
-            <a href="" target="_blank">
+            <a href="https://forms.gle/RCp2kr5zheyp2Gq2A" target="_blank">
               Join Now
             </a>
             <Image
