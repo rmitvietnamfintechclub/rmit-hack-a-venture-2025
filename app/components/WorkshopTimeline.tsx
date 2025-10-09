@@ -5,7 +5,7 @@ import { useInView } from "react-intersection-observer";
 
 export const WorkshopTimeline = () => {
   return (
-    <section className="w-full flex flex-col items-center md:px-20 max-md:px-10 max-md:mt-[40px] md:mt-[20px] overflow-x:hidden">
+    <section className="w-full flex flex-col items-center md:px-20 max-md:px-6 max-md:mt-[40px] md:mt-[20px] overflow-x:hidden">
       <div className="drop-shadow-container">
         <h1
           className={`max-md:text-4xl md:text-6xl text-center text-white font-semibold drop-shadow-text`}

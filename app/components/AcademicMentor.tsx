@@ -136,7 +136,7 @@ export const AcademicMentor = () => {
   };
 
   return (
-    <div className="px-10 pb-10">
+    <div className="px-6 pb-10">
       <h1 className="max-md:hidden md:block md:text-6xl text-center text-white font-semibold mb-8 drop-shadow-text">
         Hack-A-Venture <span className="text-color-gradient">Academic Mentors</span>
       </h1>

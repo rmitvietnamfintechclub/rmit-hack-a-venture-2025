@@ -123,7 +123,7 @@ export const JudgeSection = () => {
     } else {
       return (
         <div className="relative h-48 md:h-64 p-px rounded-lg bg-gradient-to-b from-[#F37D12] to-[#FDE309]">
-          <div className="flex flex-col items-center justify-center w-full h-full bg-gradient-to-b from-[#10382C] to-[#0A1B15] rounded-[7px] text-center">
+          <div className="flex flex-col items-center justify-center w-full h-full bg-gradient-to-b from-[#10382C] to-[#0A1B15] rounded-[7px] text-center px-4">
             <IconSparkles
               size={65}
               className="max-md:w-[50px] text-yellow-400 max-md:mb-2 md:mb-4 animate-pulse"
@@ -141,17 +141,17 @@ export const JudgeSection = () => {
   };
 
   return (
-    <div className="py-8 md:py-12 px-4 md:px-16">
+    <div className="py-8 md:py-12 px-6 md:px-16">
       <h1 className="max-md:text-4xl md:text-6xl text-center text-white font-semibold mb-8 drop-shadow-text">
         Hack-A-Venture <span className="text-color-gradient">Judges</span>
       </h1>
-      <div className="flex justify-center items-center gap-6 md:gap-4 mb-12">
+      <div className="flex justify-center items-center gap-6 md:gap-4 mb-6 md:mb-12">
         {[1, 2, 3].map((round) => (
           <button
             key={round}
             onClick={() => setActiveRound(round)}
             className={clsx(
-              "py-2 px-6 rounded-full text-lg font-semibold transition-all duration-300",
+              "py-2 px-4 md:px-6 rounded-full text-base md:text-lg font-semibold transition-all duration-300",
               activeRound === round
                 ? "bg-gradient-to-r from-[#F37D12] to-[#FDE309] text-black shadow-lg"
                 : "bg-gray-800/80 text-gray-300 hover:bg-gray-700"

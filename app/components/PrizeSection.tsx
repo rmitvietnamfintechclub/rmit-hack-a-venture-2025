@@ -56,7 +56,7 @@ export const PrizeSection = () => {
   return (
     <div
       ref={ref}
-      className="text-white flex flex-col md:mt-[60px] max-md:px-10 max-md:mt-0 text-center"
+      className="text-white flex flex-col md:mt-[60px] max-md:px-6 max-md:mt-0 text-center"
     >
       {/* --- HEADING SECTION --- */}
       <motion.div
@@ -68,12 +68,6 @@ export const PrizeSection = () => {
         <span className="max-md:text-3xl md:text-6xl text-center text-white font-semibold md:px-[40px] drop-shadow-text">
           Hack-A-Venture <span className="text-color-gradient">Prizes</span>
         </span>
-        {/* <p className="md:mt-[24px] text-lg md:text-xl font-medium font-sans text-white max-md:mt-[10px]">
-          Prize components will include{" "}
-          <span className="text-color-gradient">GotIt Vouchers</span>,{" "}
-          <span className="text-color-gradient">Course Scholarships</span> and{" "}
-          <span className="text-color-gradient">Medals</span>
-        </p> */}
       </motion.div>
 
       {/* --- PRIZES CONTAINER --- */}
@@ -95,8 +89,8 @@ export const PrizeSection = () => {
                 alt={prize.alt}
                 className={`${
                   prize.isChampion
-                    ? "md:w-[230px] w-[110px]"
-                    : "md:w-[160px] w-[80px]"
+                    ? "md:w-[230px] w-[100px]"
+                    : "md:w-[160px] w-[70px]"
                 } h-auto rounded-xl mb-4 object-cover mx-auto`}
                 width={270}
                 height={270}
@@ -105,8 +99,8 @@ export const PrizeSection = () => {
                 <h3
                   className={`${
                     prize.isChampion
-                      ? "md:text-3xl text-2xl"
-                      : "md:text-3xl text-xl" 
+                      ? "md:text-3xl text-xl"
+                      : "md:text-3xl text-lg" 
                   } font-semibold mb-2 drop-shadow-text`}
                 >
                   {prize.title}

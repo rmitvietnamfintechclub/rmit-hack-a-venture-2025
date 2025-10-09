@@ -34,7 +34,7 @@ export const SponsoredPrizeSection = () => {
     initial="hidden"
     variants={variants}
     transition={{ duration: 1.3, delay: 0.5 }}
-    className="w-full md:px-20"
+    className="w-full px-6 md:px-20"
     ref={ref}
   >
     <h1 className="mt-[30px] md:mt-[50px] text-3xl font-semibold text-white drop-shadow-text md:text-6xl text-center">

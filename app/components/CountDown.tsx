@@ -44,11 +44,10 @@ const StaticCard = ({
         border="1px solid #91DAAE"
       >
         <Text
-          // fontSize={"200px"}
           fontWeight="normal"
           transform="translateY(50%)"
           color="#91DAAE"
-          className="md:text-[200px] text-[80px]"
+          className="md:text-[200px] text-[50px]"
         >
           {unit}
         </Text>
@@ -73,7 +72,7 @@ const StaticCard = ({
         fontWeight="semibold"
         transform="translateY(-50%)"
         color="#91DAAE"
-        className="md:text-[200px] text-[80px]"
+        className="md:text-[200px] text-[50px]"
       >
         {unit}
       </Text>
@@ -137,7 +136,7 @@ const UpperAnimatedCard = memo(
           fontWeight="semibold"
           transform="translateY(50%)"
           color="#91DAAE"
-          className="md:text-[200px] text-[80px]"
+          className="md:text-[200px] text-[50px]"
         >
           {displayUnit}
         </Text>
@@ -182,7 +181,7 @@ const BottomAnimatedCard = ({ unit }: { unit: number | string }) => {
         fontWeight="semibold"
         transform="translateY(-50%)"
         color="#91DAAE"
-        className="md:text-[200px] text-[80px]"
+        className="md:text-[200px] text-[50px]"
       >
         {displayUnit}
       </Text>
@@ -222,11 +221,9 @@ const FlipContainer = ({
       <Box
         display="block"
         pos="relative"
-        // w="327.22px"
-        // h="264.67px"
         bgColor="#12161C"
         rounded="18.51px"
-        className="md:w-[267px] md:h-[230px] max-md:w-[137px] max-md:h-[110px]"
+        className="md:w-[267px] md:h-[230px] max-md:w-[80px] max-md:h-[80px]"
         sx={{ perspective: "800px", perspectiveOrigin: "50% 50%" }}
       >
         <StaticCard position="upper" unit={current} />
@@ -238,7 +235,7 @@ const FlipContainer = ({
       {/* Text */}
       <Center py={20}>
         <Text
-          className="md:text-4xl text-lg font-sans font-semibold"
+          className="md:text-4xl md:ml-0 ml-2 text-lg font-sans font-semibold"
           fontWeight="light"
           textTransform="uppercase"
           color="white"
@@ -267,7 +264,7 @@ const renderer: CountdownRendererFn = ({
   return (
     <Center>
       <HStack>
-        <div className="grid grid-cols-4 gap-4 mt-[30px] max-md:gap-x-[30px]">
+        <div className="grid grid-cols-4 gap-4 mt-[30px] max-md:gap-x-[15px]">
           <FlipContainer number={days} title="days" />
           <FlipContainer number={hours} title="hours" />
           <FlipContainer number={minutes} title="mins" />
@@ -287,7 +284,7 @@ export const Countdown = ({ date }: Pick<CountdownProps, "date">) => {
     return null;
   }
   return (
-    <div className="md:mt-[50px] mt-[30px] px-10">
+    <div className="md:mt-[50px] mt-[30px] md:px-10 px-6">
       <h1
         className={`max-md:text-3xl md:text-[3.65rem] text-center md:leading-[5rem] text-color-gradient font-semibold drop-shadow-text`}
       >

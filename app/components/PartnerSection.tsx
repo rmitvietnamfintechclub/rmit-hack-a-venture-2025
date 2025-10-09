@@ -9,7 +9,7 @@ import { IconSpeakerphone } from "@tabler/icons-react";
 export const PartnerSection = () => {
   return (
     <div
-      className="text-center max-md:my-4 md:my-10 container mx-auto max-md:px-4 md:px-20"
+      className="text-center max-md:my-4 md:my-10 container mx-auto max-md:px-6 md:px-20"
       id="hackaventure-sponsors"
     >
       <h1 className="max-md:text-3xl md:text-6xl text-center text-white font-semibold md:px-[40px] drop-shadow-text">
@@ -19,9 +19,9 @@ export const PartnerSection = () => {
         <div className="flex flex-col items-center justify-center w-full h-full bg-gradient-to-b from-[#10382C] to-[#0A1B15] rounded-[7px] text-center">
           <IconSpeakerphone
             size={65}
-            className="max-md:w-[50px] text-yellow-400 max-md:mb-2 md:mb-4 animate-pulse"
+            className="max-md:w-[40px] text-yellow-400 max-md:mb-2 md:mb-4 animate-pulse"
           />
-          <h3 className="md:text-3xl max-md:text-2xl font-bold tracking-wider uppercase text-color-gradient">
+          <h3 className="md:text-3xl max-md:text-xl font-bold tracking-wider uppercase text-color-gradient">
             Revealing Soon!
           </h3>
         </div>

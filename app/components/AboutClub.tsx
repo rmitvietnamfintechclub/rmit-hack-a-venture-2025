@@ -83,20 +83,20 @@ export const AboutClub = () => {
   };
 
   return (
-    <div className="flex flex-col items-center justify-center px-10 md:px-0">
+    <div className="flex flex-col items-center justify-center px-6 md:px-0">
       {/* --- UNIFIED "WHO ARE WE" SECTION --- */}
       <div className="w-full flex flex-col md:flex-row items-center justify-start md:gap-[60px] md:px-20 mt-4">
         <div className="w-full md:w-[45vw]">
           <h1 className="text-color-gradient text-center md:text-left text-3xl md:text-[2rem] font-semibold font-sans drop-shadow-text mb-4">
             Competition Organizer
           </h1>
-          <h1 className="text-[#2C305F] drop-shadow-club-text text-6xl md:text-[4rem] text-center md:text-left font-black uppercase md:mb-[0.5rem] mb-[0.75rem]">
+          <h1 className="text-[#2C305F] drop-shadow-club-text text-4xl md:text-[4rem] text-center md:text-left font-black uppercase md:mb-[0.5rem] mb-[0.75rem]">
             <span className="text-[#DCB968]">Fin</span>Tech Club
           </h1>
-          <h1 className="text-white drop-shadow-text text-5xl md:text-[4rem] text-center md:text-left font-black uppercase md:mb-[1.5rem] mb-[0.75rem]">
+          <h1 className="text-white drop-shadow-text text-3xl md:text-[4rem] text-center md:text-left font-black uppercase md:mb-[1.5rem] mb-[0.75rem]">
             Who are we?
           </h1>
-          <p className="text-white leading-relaxed text-justify text-lg md:text-xl font-medium md:text-[1.25rem]">
+          <p className="text-white leading-relaxed md:text-justify text-center text-lg md:text-xl font-medium md:text-[1.25rem]">
             We are the first ever student-led Financial Technology initiative in
             Vietnam. Founded in early 2020, RMIT FinTech Club aims to unite
             students across diverse degree programs and offer valuable insights
@@ -117,11 +117,11 @@ export const AboutClub = () => {
             height={1000}
             priority
           />
-          <div className="md:mt-4 flex flex-col items-center md:items-start">
+          <div className="mt-4 flex flex-col items-center md:items-start">
             <p className="text-color-gradient text-[1.75rem] md:text-[1.5rem] font-bold text-center md:text-left">
               Our Core Activities
             </p>
-            <div className="grid grid-cols-4 gap-6 md:gap-4 mt-2 w-full">
+            <div className="grid md:grid-cols-4 grid-cols-2 gap-6 md:gap-4 mt-2 w-full">
               {coreActivities.map((activity) => (
                 <div
                   key={activity}
@@ -136,7 +136,7 @@ export const AboutClub = () => {
       </div>
 
       {/* --- UNIFIED IMAGES ROW --- */}
-      <div className="flex flex-row justify-between items-center w-full h-fit my-4 md:my-8 md:px-20">
+      <div className="md:flex hidden flex-row justify-between items-center w-full h-fit my-4 md:my-8 md:px-20">
         <Image
           src="https://d2prwyp3rwi40.cloudfront.net/global/Mascot+-+M%E1%BA%B7t+tr%C6%B0%E1%BB%9Bc.svg"
           alt="Bear Mascot"
@@ -165,19 +165,19 @@ export const AboutClub = () => {
 
       {/* --- UNIFIED STATISTICS SECTION --- */}
 
-      <h1 className="text-3xl md:text-6xl font-bold font-sans text-center text-color-gradient py-2">
+      <h1 className="text-3xl md:text-6xl font-bold font-sans text-center text-color-gradient md:py-2 max-md:mt-8">
         Our key metrics
       </h1>
       <div
         ref={ref}
-        className="grid grid-cols-3 md:px-[10vw] mt-[20px] md:mt-[40px] gap-y-8 md:gap-y-16 w-full justify-items-center font-sans"
+        className="grid md:grid-cols-3 grid-cols-1 md:px-[10vw] mt-[20px] md:mt-[40px] gap-y-2 md:gap-y-16 w-full justify-items-center font-sans"
       >
         {statsData.map((stat) => (
           <div
             key={stat.label}
             className={`flex flex-col items-center justify-start h-full px-2 text-center w-full ${
               stat.isFeatured
-                ? "border-r-[1.5px] border-l-[1.5px] border-[#91DAAE] py-4 md:py-[42px] drop-shadow-container"
+                ? "md:border-r-[1.5px] md:border-l-[1.5px] border-[#91DAAE] py-4 md:py-[42px] drop-shadow-container"
                 : ""
             }`}
           >
@@ -185,7 +185,7 @@ export const AboutClub = () => {
               className={`${stat.color} ${
                 stat.isFeatured
                   ? "md:text-6xl text-3xl"
-                  : "md:text-4xl text-2xl"
+                  : "md:text-4xl text-3xl"
               } font-semibold font-sans drop-shadow-text`}
             >
               <CountUp start={0} end={inView ? stat.value : 0} duration={5}>
@@ -193,9 +193,10 @@ export const AboutClub = () => {
               </CountUp>
               {stat.suffix}
             </span>
-            <span className="text-xl font-semibold text-[#9CA3AF] md:mt-[32px] mt-2">
+            <span className="text-xl font-semibold text-[#9CA3AF] md:mt-[32px] mt-2 md:mb-0 mb-[10px]">
               {stat.label}
             </span>
+            <hr className="text-[#91DAAE] h-[10px] w-[30vw] block md:hidden"/>
           </div>
         ))}
       </div>
@@ -323,10 +324,10 @@ export const AboutClub = () => {
           variants={titleVariants}
           transition={{ duration: 1.3, delay: 1.8 }}
         >
-          <p className="text-lg md:text-xl text-justify text-white font-medium max-md:mt-[32px] md:mt-[48px]">
+          <p className="text-lg md:text-xl md:text-justify text-center text-white font-medium max-md:mt-[32px] md:mt-[48px]">
             Through various initiatives such as workshops, events, training
             programs, and competitions like{" "}
-            <span className="text-color-gradient font-semibold">
+            <span className="text-color-gradient font-bold">
               Hack-A-Venture
             </span>
             , the club empowers students to explore the future of financial

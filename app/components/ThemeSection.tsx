@@ -17,7 +17,7 @@ const themeData = [
     type: "tech",
     iconSrc: "/smart_toy.png",
     alt: "AI",
-    text: "Artificial Intelligence (AI)",
+    text: "Artificial Intelligence",
     imageSrc: "/ArtificialIntelligence.png",
   },
   {
@@ -71,7 +71,7 @@ const ThemeItem: React.FC<ThemeItemProps> = ({
       onClick={() => setSelectedId(item.id)}
     >
       <div
-        className={`text-[1.5rem] font-semibold font-sans ${
+        className={`text-[1.5rem] font-semibold ${
           selectedId === item.id
             ? item.id === "0"
               ? "text-[#91DAAE]"
@@ -104,11 +104,11 @@ export const ThemeSection = () => {
   const selectedItem = themeData.find((item) => item.id === selectedId);
 
   return (
-    <div className="md:px-20 md:pb-[20px] w-full max-md:px-10 max-md:pt-[30px]">
+    <div className="md:px-20 md:pb-[20px] w-full max-md:px-6 max-md:pt-[30px]">
       <div className="md:grid md:grid-cols-10 w-full md:pt-[80px]">
         <div className="md:col-span-5 w-full h-full">
           <div className="drop-shadow-container">
-            <h1 className="text-green-color-gradient md:text-6xl pb-4 max-md:text-3xl font-bold drop-shadow-green-text font-sans">
+            <h1 className="text-green-color-gradient md:text-6xl pb-4 max-md:text-3xl font-bold drop-shadow-green-text">
               Our Theme
             </h1>
           </div>
@@ -120,11 +120,11 @@ export const ThemeSection = () => {
           />
 
           <div className="drop-shadow-container mt-8">
-            <h1 className="text-color-gradient md:text-6xl max-md:text-3xl font-bold drop-shadow-text font-sans">
+            <h1 className="text-color-gradient md:text-6xl max-md:text-3xl font-bold drop-shadow-text">
               Our Tech Focus
             </h1>
           </div>
-          <h3 className="md:mt-4 font-sans text-lg text-white font-medium max-md:mt-[16px]">
+          <h3 className="md:mt-4 text-lg text-white font-medium max-md:mt-[16px]">
             Participants are encouraged to explore and leverage any technology
             of their choice, including but not limited to:
           </h3>
@@ -164,7 +164,7 @@ export const ThemeSection = () => {
         </div>
       </div>
       <div className="md:py-[20px] mt-[30px]">
-        <span className="text-white text-lg text-justify md:text-xl font-medium font-sans">
+        <span className="text-white text-lg max-md:text-center md:text-justify md:text-xl font-medium">
           These technologies will be used to develop innovative solutions to
           address social challenges within Vietnam. The specific social issues
           related to{" "}

@@ -108,7 +108,7 @@ const MobileNav = () => {
         animate={hamburgerBarIsActive ? "open" : "closed"}
         custom={height}
         ref={containerRef}
-        className="w-full h-[72px] backdrop-blur-sm bg-black/30 border-b-[1px] border-solid border-[#374051] flex justify-between items-center mr-10"
+        className="w-full h-[72px] backdrop-blur-sm bg-black/30 border-b-[1px] border-solid border-[#374051] flex justify-between items-center pr-6"
       >
         {/*---------- mobile logo ----------*/}
         <a className="no-underline block" href="/">

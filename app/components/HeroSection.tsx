@@ -152,13 +152,13 @@ export const HeroSection = () => {
         </div>
 
         <div className="text-white text-lg my-[16px] font-sans font-medium text-center mx-[20px] mt-[24px]">
-          Organized by RMIT Vietnam FinTech Club, Hack-A-Venture is a
+          Organized by RMIT Vietnam FinTech Club, <span className="font-bold text-color-gradient">Hack-A-Venture</span> is a
           hackathon-style innovation competition for{" "}
-          <span className="font-bold text-color-gradient inline-block">
+          <span className="font-bold text-color-gradient">
             Business
           </span>{" "}
           and{" "}
-          <span className="font-bold text-color-gradient inline-block">
+          <span className="font-bold text-color-gradient">
             Technology
           </span>{" "}
           students nationwide, encouraging them to leverage technologies to
