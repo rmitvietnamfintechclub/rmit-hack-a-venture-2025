@@ -9,7 +9,7 @@ const STAGGER = 0.015;
 export const HeroSection = () => {
   return (
     <>
-      <div className="max-md:hidden grid grid-cols-2 items-start md:px-20">
+      <div className="max-md:hidden grid grid-cols-2 items-start mb-12 md:px-20">
         <div className="justify-center mx-auto md:w-full md:mt-20">
           <div className="mx-auto">
             <div className="text-[3.5rem] mb-[16px] drop-shadow-container">
@@ -87,56 +87,14 @@ export const HeroSection = () => {
             </div>
           </div>
         </div>
-        <div
-          className="items-start mx-auto w-full bg-center md:pt-[100px] md:pb-[100px] bg-contain relative"
-          style={{
-            backgroundImage: `url(${"hackaventure-road.png"})`,
-            backgroundRepeat: "no-repeat",
-            backgroundSize: "contain",
-            backgroundPosition: "right -20px top -60px",
-          }}
-        >
+
+        <div className="flex justify-end mt-[40px]">
           <Image
-            src={"/hackaventure-logo.png"}
-            alt="HAV Logo"
+            src={"/graphic.png"}
+            alt="HAV Graphic"
             width={1000}
             height={1000}
-            className="w-auto h-[250px] top-[4rem] left-[-2.5rem] absolute -rotate-3"
-          />
-          <Image
-            src={"/hackaventure-mountain.png"}
-            alt="hero"
-            width={1000}
-            height={1000}
-            className="w-auto h-[300px] top-[-3rem] left-[2.5rem] absolute"
-          />
-          <Image
-            src={"/hackaventure-mountain.png"}
-            alt="hero"
-            width={1000}
-            height={1000}
-            className="w-auto h-[250px] top-[-2rem] left-[8rem] absolute"
-          />
-          <Image
-            src={"/hackaventure-turbin.png"}
-            alt="hero"
-            width={1000}
-            height={1000}
-            className="w-auto h-[200px] top-[2.75rem] right-[8.25rem] absolute -rotate-3"
-          />
-          <Image
-            src={"/hackaventure-turbin.png"}
-            alt="hero"
-            width={1000}
-            height={1000}
-            className="w-auto h-[150px] top-[1.5rem] left-[-1.25rem] absolute -rotate-3"
-          />
-          <Image
-            src={"/mascot.png"}
-            alt="hero"
-            width={1000}
-            height={1000}
-            className="my-7 w-auto h-[260px] mx-[16rem]"
+            className="w-[50vw] h-auto"
           />
         </div>
       </div>
