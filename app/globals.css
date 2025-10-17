@@ -94,3 +94,19 @@ body {
     0 100%
   );
 }
+
+.text-gradient-diamond {
+  background: linear-gradient(180deg, #FFFFFF 0%, #FDE309 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
+.text-gradient-silver {
+  background: linear-gradient(180deg, #F0F0F0 0%, #BDBDBD 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}

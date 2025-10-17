@@ -11,7 +11,7 @@ import { PrizeSection } from "./components/PrizeSection";
 import { SponsoredPrizeSection } from "./components/SponsoredPrizeSection";
 import { ThemeSection } from "./components/ThemeSection";
 import { WhoSection } from "./components/WhoSection";
-import { WorkshopTimeline } from "./components/WorkshopTimeline";
+import { TimelineSection } from "./components/TimelineSection";
 import { BackToTopButton } from "./components/BackToTopButton";
 import { AcademicMentor } from "./components/AcademicMentor";
 
@@ -26,7 +26,7 @@ export default function Home() {
       <AboutClub />
       <WhoSection />
       <ThemeSection />
-      <WorkshopTimeline />
+      <TimelineSection />
       <PrizeSection />
       <SponsoredPrizeSection />
       <JudgeSection />
