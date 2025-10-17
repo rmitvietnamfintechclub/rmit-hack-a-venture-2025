@@ -102,7 +102,7 @@ const RoundFormatTimeline = () => {
   return (
     <section className="w-full flex flex-col items-center">
       <RoundedTimelineHeader text="ROUND FORMAT" />
-      <p className="text-white text-[24px] font-bold mt-[30px] md:mb-[10px] max-md:mb-0">
+      <p className="text-white text-[24px] font-bold md:mt-[30px] max-md:mt-[20px] md:mb-[20px] max-md:mb-0">
         Round
       </p>
       <div className="w-full flex flex-col items-center">
@@ -122,11 +122,11 @@ const TrainingWorkshopTimeline = () => {
   return (
     <section className="w-full flex flex-col items-center md:mt-[40px]">
       <RoundedTimelineHeader text="TRAINING WORKSHOPS" />
-      <p className="text-center text-xl font-medium my-[30px] text-[#91DAAE]">
+      <p className="text-center text-xl font-medium max-md:my-[20px] md:my-[30px] text-[#91DAAE]">
         To support participants, Hack-A-Venture 2025 will provide a series of
         workshops
       </p>
-      <p className="text-white text-[24px] font-bold mb-[30px]">Workshop</p>
+      <p className="text-white text-[24px] font-bold max-md:mb-0 md:mb-[20px]">Workshop</p>
       <div className="w-full flex flex-col items-center">
         {trainingWorkshopData.map((item, index) => (
           <DetailTimeLine
@@ -202,7 +202,7 @@ const DetailTimeLine: React.FC<{
 
   return (
     <>
-      {/*----------- laptop version (CSS GRID) ---------*/}
+      {/*----------- Laptop version ---------*/}
       <div className="relative w-full md:grid hidden grid-cols-[1fr_auto_1fr] items-start gap-x-8">
         {props.rightSideOfTextSection ? (
           <div>{/* Empty Left Column */}</div>
@@ -219,14 +219,13 @@ const DetailTimeLine: React.FC<{
         )}
       </div>
 
-      {/*----------- mobile version (FLEX COL) ---------*/}
-      <section className="w-[90%] flex flex-col items-center gap-[15px] my-[30px] md:hidden">
+      {/*----------- Mobile version ---------*/}
+      <section className="w-[90%] flex flex-col items-center gap-[15px] my-[15px] md:hidden">
         <MilestoneRound
           rounded={props.rounded}
           numberOfOrder={props.numberOfOrder}
         />
         <TimelineRange timeRangeText={props.timeRangeText} />
-        {/* FIXED Dash Line for Mobile */}
         <div
           className="mx-auto w-[150px] h-1"
           style={{
@@ -253,7 +252,6 @@ const TimelineMilestoneAndLine: React.FC<{
 }> = ({ isLast, rounded, numberOfOrder, timeRangeText }) => {
   return (
     <div className="relative h-full flex flex-col items-center">
-      {/* FIXED: Single, consistent gradient for the vertical line */}
       {!isLast && (
         <div
           className="absolute w-0.5 h-full -z-10 top-12"
