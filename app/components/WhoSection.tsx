@@ -29,8 +29,8 @@ export const WhoSection = () => {
   };
 
   return (
-    <div className="md:px-20 md:mt-[40px] max-md:px-6" ref={ref}>
-      <div className="max-md:text-3xl md:text-6xl max-md:py-6 text-center text-white font-semibold drop-shadow-text">
+    <div className="md:px-20 md:mt-[10px] max-md:px-6" ref={ref}>
+      <div className="max-md:text-3xl md:text-6xl max-md:pb-6 text-center text-white font-semibold drop-shadow-text">
         <motion.div
           initial="hidden"
           animate={controls}

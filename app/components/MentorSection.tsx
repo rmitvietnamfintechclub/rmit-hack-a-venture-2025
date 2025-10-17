@@ -4,7 +4,7 @@ import { IconSpeakerphone } from "@tabler/icons-react";
 
 export const MentorSection = () => {
   return (
-    <div className="flex flex-col items-center justify-center md:px-20 px-6 pt-4 md:pt-0">
+    <div className="flex flex-col items-center justify-center md:px-20 px-6">
       <h1 className="max-md:text-4xl md:text-6xl text-center text-white font-semibold mb-4 md:mb-8 drop-shadow-text">
         Hack-A-Venture <span className="text-color-gradient">Mentors</span>
       </h1>

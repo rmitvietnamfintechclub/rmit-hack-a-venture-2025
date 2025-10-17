@@ -123,7 +123,7 @@ export const PartnerSection = () => {
   return (
     <div
       ref={ref}
-      className="container mx-auto py-8 md:py-12 px-6 md:px-20 text-center"
+      className="container mx-auto py-4 md:py-8 px-6 md:px-20 text-center"
       id="hackaventure-sponsors"
     >
       <motion.h1
@@ -139,11 +139,11 @@ export const PartnerSection = () => {
         variants={containerVariants}
         initial="hidden"
         animate={controls}
-        className="space-y-12 md:space-y-16"
+        className="space-y-4 md:space-y-16"
       >
         {/* Diamond Sponsor */}
         <motion.div variants={itemVariants}>
-          <h2 className="text-3xl md:text-4xl font-bold mb-6 md:mb-8 text-gradient-diamond drop-shadow-text tracking-wider">
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 md:mb-8 text-gradient-diamond drop-shadow-text tracking-wider">
             Diamond Sponsor
           </h2>
           <div className="flex justify-center">
@@ -157,7 +157,7 @@ export const PartnerSection = () => {
 
         {/* Silver Sponsors */}
         <motion.div variants={itemVariants}>
-          <h2 className="text-3xl md:text-4xl font-bold mb-6 md:mb-8 text-gradient-silver drop-shadow-text tracking-wider">
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 md:mb-8 text-gradient-silver drop-shadow-text tracking-wider">
             Silver Sponsors
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 md:gap-8 max-w-4xl mx-auto">
@@ -168,10 +168,10 @@ export const PartnerSection = () => {
         </motion.div>
 
         {/* Other Tiers - Displayed in a flexible grid */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-8 pt-4">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:pt-4">
           {/* Strategic Partner */}
           <motion.div variants={itemVariants}>
-            <h3 className="text-2xl md:text-3xl font-bold mb-6 text-color-gradient drop-shadow-text tracking-wider">
+            <h3 className="text-2xl md:text-3xl font-bold mb-4 md:mb-6 text-color-gradient drop-shadow-text tracking-wider">
               Strategic Partner
             </h3>
             <div className="flex justify-center">
@@ -185,7 +185,7 @@ export const PartnerSection = () => {
 
           {/* Academic Sponsors */}
           <motion.div variants={itemVariants}>
-            <h3 className="text-2xl md:text-3xl font-bold mb-6 text-color-gradient drop-shadow-text tracking-wider">
+            <h3 className="text-2xl md:text-3xl font-bold mb-4 md:mb-6 text-color-gradient drop-shadow-text tracking-wider">
               Academic Sponsors
             </h3>
             <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-1 gap-4">
@@ -199,7 +199,7 @@ export const PartnerSection = () => {
 
           {/* Livestream Sponsor */}
           <motion.div variants={itemVariants}>
-            <h3 className="text-2xl md:text-3xl font-bold mb-6 text-color-gradient drop-shadow-text tracking-wider">
+            <h3 className="text-2xl md:text-3xl font-bold mb-4 md:mb-6 text-color-gradient drop-shadow-text tracking-wider">
               Livestream Sponsor
             </h3>
             <div className="flex justify-center">

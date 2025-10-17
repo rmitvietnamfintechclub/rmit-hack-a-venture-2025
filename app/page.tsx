@@ -14,16 +14,25 @@ import { WhoSection } from "./components/WhoSection";
 import { TimelineSection } from "./components/TimelineSection";
 import { BackToTopButton } from "./components/BackToTopButton";
 import { AcademicMentor } from "./components/AcademicMentor";
+import { VideoRecapSection } from "./components/VideoRecapSection";
 
 export default function Home() {
   return (
     <div>
+      {/* --- Chapter 1: The HOOK (What is this & Why is it credible?) --- */}
       <Header />
       <HeroSection />
       <AboutUsSection />
+      <VideoRecapSection />
+
+      {/* --- Chapter 2: The FOUNDATION (Who is behind this?) --- */}
+      <AboutClub />
+
+      {/* --- Chapter 3: The MOTIVATION (Urgency & More Credibility) --- */}
       <Countdown date={"2025-11-02"} />
       <PartnerSection />
-      <AboutClub />
+
+      {/* --- Chapter 4: The DETAILS (For interested participants) --- */}
       <WhoSection />
       <ThemeSection />
       <TimelineSection />
@@ -32,6 +41,8 @@ export default function Home() {
       <JudgeSection />
       <MentorSection />
       <AcademicMentor />
+
+      {/* --- Utilities & Closing --- */}
       <BackToTopButton />
       <Footer />
     </div>

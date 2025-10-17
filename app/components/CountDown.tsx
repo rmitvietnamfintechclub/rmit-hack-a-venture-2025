@@ -284,7 +284,7 @@ export const Countdown = ({ date }: Pick<CountdownProps, "date">) => {
     return null;
   }
   return (
-    <div className="md:mt-[50px] mt-[30px] md:px-10 px-6">
+    <div className="mt-[30px] md:px-10 px-6">
       <h1
         className={`max-md:text-3xl md:text-[3.65rem] text-center md:leading-[5rem] text-color-gradient font-semibold drop-shadow-text`}
       >

@@ -44,7 +44,7 @@ const statsData = [
   },
   {
     value: 300,
-    label: "Fund Raised For Projects",
+    label: "Fund Raised For Projects (VND)",
     color: "text-color-gradient",
     suffix: "M+",
     isFeatured: true,
@@ -85,7 +85,7 @@ export const AboutClub = () => {
   return (
     <div className="flex flex-col items-center justify-center px-6 md:px-0">
       {/* --- UNIFIED "WHO ARE WE" SECTION --- */}
-      <div className="w-full flex flex-col md:flex-row items-center justify-start md:gap-[60px] md:px-20 mt-4">
+      <div className="w-full flex flex-col md:flex-row items-center justify-start md:gap-[60px] md:px-20 max-md:mt-8">
         <div className="w-full md:w-[45vw]">
           <h1 className="text-color-gradient text-center md:text-left text-[1.75rem] md:text-[2rem] font-semibold drop-shadow-text mb-8 max-md:mb-4">
             Competition Organizer
@@ -118,7 +118,7 @@ export const AboutClub = () => {
             priority
           />
           <div className="mt-4 flex flex-col items-center md:items-start">
-            <p className="text-color-gradient text-[1.75rem] md:text-[1.5rem] font-bold text-center md:text-left">
+            <p className="text-color-gradient text-[1.75rem] md:text-[1.5rem] font-semibold text-center md:text-left">
               Our Core Activities
             </p>
             <div className="grid md:grid-cols-4 grid-cols-2 gap-6 md:gap-4 mt-2 w-full">
@@ -165,7 +165,7 @@ export const AboutClub = () => {
 
       {/* --- UNIFIED STATISTICS SECTION --- */}
 
-      <h1 className="text-[1.75rem] md:text-6xl font-bold text-center text-color-gradient md:py-2 max-md:mt-8">
+      <h1 className="text-[1.75rem] md:text-6xl font-semibold text-center text-color-gradient md:py-2 max-md:mt-8">
         Our key metrics
       </h1>
       <div
@@ -209,7 +209,7 @@ export const AboutClub = () => {
           variants={titleVariants}
           transition={{ duration: 1.3 }}
         >
-          <h1 className="text-[1.75rem] md:text-6xl font-bold text-center text-color-gradient max-md:my-[24px] md:my-[48px]">
+          <h1 className="text-[1.75rem] md:text-6xl font-semibold text-center text-color-gradient max-md:my-[24px] md:my-[48px]">
             Our previous activities
           </h1>
         </motion.div>
