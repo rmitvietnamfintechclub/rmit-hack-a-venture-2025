@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@chakra-ui/react": "^2.10.1",
+    "@radix-ui/react-tooltip": "^1.2.8",
     "@react-three/fiber": "^8.17.9",
     "@tabler/icons-react": "^3.35.0",
     "clsx": "^2.1.1",
