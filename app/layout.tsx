@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
 import "./globals.css";
+import { Analytics } from "@vercel/analytics/next"
 
 // 2. Configure the font
 const poppins = Poppins({
@@ -28,6 +29,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${poppins.className} bg-gradient-to-b from-[#10382C] to-[#0A1B15] antialiased`}>
         {children}
+        <Analytics />
       </body>
     </html>
   );
