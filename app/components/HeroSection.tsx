@@ -65,13 +65,13 @@ export const HeroSection = () => {
             </motion.h1>
 
             <div className="mt-[40px] flex justify-start gap-4">
-              <button className="w-[12vw] h-[48px] bg-gradient-to-b from-[#F37D12] to-[#FDE309] rounded-[12px] justify-items-center flex justify-center items-center text-black font-semibold font-poppins">
+              <button className="w-[14vw] h-[48px] bg-gradient-to-b from-[#F37D12] to-[#FDE309] rounded-[12px] justify-items-center flex justify-center items-center text-black font-semibold font-poppins">
                 <a href="https://bit.ly/RMITHack-A-Venture2025Handbook" target="_blank" className="no-underline">
                   See Handbook
                 </a>
               </button>
 
-              <button className="w-[12vw] h-[48px] bg-gradient-to-b from-[#F37D12] to-[#FDE309] rounded-[12px] justify-items-center flex justify-center items-center text-black font-semibold font-poppins">
+              <button className="w-[14vw] h-[48px] bg-gradient-to-b from-[#F37D12] to-[#FDE309] rounded-[12px] justify-items-center flex justify-center items-center text-black font-semibold font-poppins">
                 {/* <Button /> */}
                 <a href="https://forms.gle/RCp2kr5zheyp2Gq2A" target="_blank">
                   Register Now
