@@ -66,7 +66,7 @@ const LaptopNav = () => {
         </a>
         <button className="px-[15px] py-[5px] rounded-2xl bg-gradient-to-b from-[#F37D12] to-[#FDE309] text-white font-semibold">
           <a href="https://forms.gle/RCp2kr5zheyp2Gq2A" target="_blank">
-            Join Now
+            Register Now
           </a>
         </button>
       </div>
@@ -283,7 +283,7 @@ const Navigation = ({
         >
           <button className="px-[24px] py-[8px] rounded-2xl bg-gradient-to-b from-[#F37D12] to-[#FDE309] text-white font-semibold">
             <a href="https://forms.gle/RCp2kr5zheyp2Gq2A" target="_blank">
-              Join Now
+              Register Now
             </a>
           </button>
         </motion.li>

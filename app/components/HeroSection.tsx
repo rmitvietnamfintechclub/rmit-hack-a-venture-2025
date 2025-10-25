@@ -74,7 +74,7 @@ export const HeroSection = () => {
               <button className="w-[12vw] h-[48px] bg-gradient-to-b from-[#F37D12] to-[#FDE309] rounded-[12px] justify-items-center flex justify-center items-center text-black font-semibold font-poppins">
                 {/* <Button /> */}
                 <a href="https://forms.gle/RCp2kr5zheyp2Gq2A" target="_blank">
-                  Join Now
+                  Register Now
                 </a>
                 <Image
                   src={"/Arrow.png"}
@@ -133,7 +133,7 @@ export const HeroSection = () => {
           <button className="w-full h-[48px] bg-gradient-to-b from-[#F37D12] to-[#FDE309] rounded-[12px] justify-items-center flex justify-center items-center text-[#000000] font-semibold font-poppins">
             {/* <Button /> */}
             <a href="https://forms.gle/RCp2kr5zheyp2Gq2A" target="_blank">
-              Join Now
+              Register Now
             </a>
             <Image
               src={"/Arrow.png"}
