@@ -8,7 +8,7 @@ import {
   MergeWithAs,
   Text,
 } from "@chakra-ui/react";
-import { motion, MotionProps, useAnimationControls } from "framer-motion";
+import { motion, useAnimationControls } from "framer-motion";
 import {
   DetailedHTMLProps,
   ForwardRefExoticComponent,
@@ -19,6 +19,7 @@ import {
   useState,
 } from "react";
 import ReactCountdown from "react-countdown";
+import { IconSpeakerphone } from "@tabler/icons-react";
 import type { CountdownProps, CountdownRendererFn } from "react-countdown";
 
 const StaticCard = ({
@@ -260,7 +261,10 @@ const renderer: CountdownRendererFn = ({
   seconds: number;
   completed: boolean;
 }) => {
+  // When completed, we now return null, because the
+  // parent component's title will change to the completed message.
   if (completed) return null;
+
   return (
     <Center>
       <HStack>
@@ -275,22 +279,52 @@ const renderer: CountdownRendererFn = ({
   );
 };
 
+// --- MODIFIED COMPONENT ---
 export const Countdown = ({ date }: Pick<CountdownProps, "date">) => {
   const [hasMounted, setHasMounted] = useState(false);
+  // 1. Add state to track completion
+  const [isCompleted, setIsCompleted] = useState(false);
+
   useEffect(() => {
     setHasMounted(true);
   }, []);
+
   if (!hasMounted) {
     return null;
   }
+
+  // 2. Create a handler for the onComplete event
+  const handleComplete = () => {
+    setIsCompleted(true);
+  };
+
   return (
     <div className="mt-[30px] md:px-10 px-6">
       <h1
         className={`max-md:text-3xl md:text-[3.65rem] text-center md:leading-[5rem] text-color-gradient font-semibold drop-shadow-text`}
       >
-        Countdown before registration closes
+        {/* 3. Conditionally render the title based on completion state */}
+        {isCompleted ? "" : "Countdown before registration closes"}
       </h1>
-      <ReactCountdown date={date} renderer={renderer} />
+      {isCompleted ? (
+        <div className="relative h-48 md:h-64 w-full p-px rounded-lg bg-gradient-to-b from-[#F37D12] to-[#FDE309] mb-12 md:mb-16">
+          <div className="flex flex-col items-center justify-center w-full h-full bg-gradient-to-b from-[#10382C] to-[#0A1B15] rounded-[7px] text-center">
+            <IconSpeakerphone
+              size={65}
+              className="max-md:w-[50px] text-yellow-400 max-md:mb-2 md:mb-4 animate-pulse"
+            />
+            <h3 className="md:text-3xl max-md:text-2xl font-bold tracking-wider uppercase text-color-gradient">
+              REGISTRATION HAS CLOSED!
+            </h3>
+          </div>
+        </div>
+      ) : (
+        <ReactCountdown
+          date={date}
+          renderer={renderer}
+          onComplete={handleComplete} // 4. Pass the handler to the component
+        />
+      )}
     </div>
   );
 };

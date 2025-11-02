@@ -24,14 +24,11 @@ export default function Home() {
       <HeroSection />
       <AboutUsSection />
       <VideoRecapSection />
-
       {/* --- Chapter 2: The FOUNDATION (Who is behind this?) --- */}
       <AboutClub />
-
       {/* --- Chapter 3: The MOTIVATION (Urgency & More Credibility) --- */}
-      <Countdown date={"2025-11-09"} />
+      <Countdown date={"2025-11-01T23:59:00"} />
       <PartnerSection />
-
       {/* --- Chapter 4: The DETAILS (For interested participants) --- */}
       <WhoSection />
       <ThemeSection />
@@ -41,7 +38,6 @@ export default function Home() {
       <JudgeSection />
       <MentorSection />
       <AcademicMentor />
-
       {/* --- Utilities & Closing --- */}
       <BackToTopButton />
       <Footer />

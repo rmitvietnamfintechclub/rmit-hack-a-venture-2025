@@ -1,4 +1,3 @@
-import Image from "next/image";
 import React from "react";
 import { IconSpeakerphone } from "@tabler/icons-react";
 
