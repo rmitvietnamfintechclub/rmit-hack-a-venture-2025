@@ -29,7 +29,7 @@ export default function Home() {
       <AboutClub />
 
       {/* --- Chapter 3: The MOTIVATION (Urgency & More Credibility) --- */}
-      <Countdown date={"2025-11-02"} />
+      <Countdown date={"2025-11-09"} />
       <PartnerSection />
 
       {/* --- Chapter 4: The DETAILS (For interested participants) --- */}

@@ -111,7 +111,7 @@ export const AboutClub = () => {
         <div className="md:w-[40vw]">
           <Image
             className="max-md:hidden w-full object-cover rounded-3xl"
-            src="https://d2prwyp3rwi40.cloudfront.net/home/assets/IntroPhoto-ODay.png"
+            src="https://d2uq10394z5icp.cloudfront.net/home/assets/IntroPhoto-ODay.png"
             alt="Intro Photo - Orientation Day"
             width={1000}
             height={1000}

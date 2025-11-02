@@ -5,12 +5,10 @@ const nextConfig = {
   images: {
     remotePatterns: [
       {
-        // Giữ lại cấu hình cũ của bạn cho CloudFront
         protocol: "https",
-        hostname: "d2prwyp3rwi40.cloudfront.net",
+        hostname: "d2uq10394z5icp.cloudfront.net",
       },
       {
-        // Thêm cấu hình mới cho YouTube thumbnails
         protocol: "https",
         hostname: "i.ytimg.com",
       },
