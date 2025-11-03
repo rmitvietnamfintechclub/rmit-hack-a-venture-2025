@@ -60,7 +60,7 @@ const trainingWorkshopData = [
     rounded: false,
     numberOfOrder: 1,
     rightSideOfTextSection: true,
-    timeRangeText: "Nov 04, 2025",
+    timeRangeText: "Nov 07, 2025",
     headline: "WORKSHOP 01",
     subHeadline: "Technology in Business Innovation",
     paragraph:
