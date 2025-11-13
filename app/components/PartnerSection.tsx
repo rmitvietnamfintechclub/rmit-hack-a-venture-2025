@@ -34,6 +34,11 @@ const sponsorsData = {
       name: "MOORE AISC",
       logoUrl: "/partners/moore-aisc.png",
     },
+    {
+      name: "Aptos",
+      logoUrl: "/partners/aptos.png",
+      bgClass: "bg-white",
+    },
   ],
   strategic: [
     {
@@ -238,7 +243,7 @@ export const PartnerSection = () => {
           {/* Diamond Sponsor */}
           <motion.div variants={itemVariants}>
             <h2 className="text-3xl md:text-4xl font-bold mb-4 md:mb-8 text-gradient-diamond drop-shadow-text tracking-wider">
-              Diamond Sponsor
+              Diamond Sponsors
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 max-w-4xl mx-auto">
               {sponsorsData.diamond.map((sponsor) => (
@@ -254,7 +259,7 @@ export const PartnerSection = () => {
             <h2 className="text-3xl md:text-4xl font-bold mb-4 md:mb-8 text-gradient-silver drop-shadow-text tracking-wider">
               Silver Sponsors
             </h2>
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 md:gap-8 max-w-4xl mx-auto">
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8 mx-auto">
               {sponsorsData.silver.map((sponsor) => (
                 <SponsorCard key={sponsor.name} {...sponsor} />
               ))}
@@ -266,7 +271,7 @@ export const PartnerSection = () => {
             {/* Strategic Partner */}
             <motion.div variants={itemVariants}>
               <h3 className="text-2xl md:text-3xl font-bold mb-4 md:mb-6 text-color-gradient drop-shadow-text tracking-wider md:h-20 md:flex md:items-center md:justify-center">
-                Strategic Advisor
+                Strategic Advisors
               </h3>
               <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-1 gap-4">
                 {sponsorsData.strategic.map((sponsor) => (
@@ -296,7 +301,7 @@ export const PartnerSection = () => {
               <h3 className="text-2xl md:text-3xl font-bold mb-4 md:mb-6 text-color-gradient drop-shadow-text tracking-wider md:h-20 md:flex md:items-center md:justify-center">
                 F&B Sponsor
               </h3>
-              <div className="grid grid-cols-1 gap-4">
+              <div className="flex justify-center">
                 {sponsorsData.fb.map((sponsor) => (
                   <div key={sponsor.name} className="w-full max-w-xs">
                     <SponsorCard {...sponsor} />
