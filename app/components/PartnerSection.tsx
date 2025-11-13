@@ -16,7 +16,7 @@ const sponsorsData = {
       logoUrl: "/partners/u2u-network.png",
       bgClass: "bg-white",
     },
-        {
+    {
       name: "NEAX",
       logoUrl: "/partners/neax-New.png",
     },
@@ -40,6 +40,10 @@ const sponsorsData = {
       name: "Chainlink",
       logoUrl: "/partners/chainlink.png",
     },
+    {
+      name: "AGYRA",
+      logoUrl: "/partners/agyra.png",
+    },
   ],
   academic: [
     {
@@ -53,6 +57,16 @@ const sponsorsData = {
     {
       name: "Big-O Coding",
       logoUrl: "/partners/bigo.png",
+    },
+    {
+      name: "SAPP Academy",
+      logoUrl: "/partners/sapp.png",
+    },
+  ],
+  fb: [
+    {
+      name: "ÂME Café & Brunch",
+      logoUrl: "/partners/âme.png",
     },
   ],
   livestream: [
@@ -226,7 +240,7 @@ export const PartnerSection = () => {
             <h2 className="text-3xl md:text-4xl font-bold mb-4 md:mb-8 text-gradient-diamond drop-shadow-text tracking-wider">
               Diamond Sponsor
             </h2>
-            <div className="flex justify-center gap-6 md:gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 max-w-4xl mx-auto">
               {sponsorsData.diamond.map((sponsor) => (
                 <div key={sponsor.name} className="w-full max-w-sm md:max-w-md">
                   <SponsorCard {...sponsor} />
@@ -248,13 +262,13 @@ export const PartnerSection = () => {
           </motion.div>
 
           {/* Other Tiers - Displayed in a flexible grid */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:pt-4">
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-8 md:pt-4">
             {/* Strategic Partner */}
             <motion.div variants={itemVariants}>
-              <h3 className="text-2xl md:text-3xl font-bold mb-4 md:mb-6 text-color-gradient drop-shadow-text tracking-wider">
-                Strategic Partner
+              <h3 className="text-2xl md:text-3xl font-bold mb-4 md:mb-6 text-color-gradient drop-shadow-text tracking-wider md:h-20 md:flex md:items-center md:justify-center">
+                Strategic Advisor
               </h3>
-              <div className="flex justify-center">
+              <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-1 gap-4">
                 {sponsorsData.strategic.map((sponsor) => (
                   <div key={sponsor.name} className="w-full max-w-xs">
                     <SponsorCard {...sponsor} />
@@ -265,7 +279,7 @@ export const PartnerSection = () => {
 
             {/* Academic Sponsors */}
             <motion.div variants={itemVariants}>
-              <h3 className="text-2xl md:text-3xl font-bold mb-4 md:mb-6 text-color-gradient drop-shadow-text tracking-wider">
+              <h3 className="text-2xl md:text-3xl font-bold mb-4 md:mb-6 text-color-gradient drop-shadow-text tracking-wider md:h-20 md:flex md:items-center md:justify-center">
                 Academic Sponsors
               </h3>
               <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-1 gap-4">
@@ -277,9 +291,24 @@ export const PartnerSection = () => {
               </div>
             </motion.div>
 
+            {/* F&B Sponsor */}
+            <motion.div variants={itemVariants}>
+              <h3 className="text-2xl md:text-3xl font-bold mb-4 md:mb-6 text-color-gradient drop-shadow-text tracking-wider md:h-20 md:flex md:items-center md:justify-center">
+                F&B Sponsor
+              </h3>
+              <div className="grid grid-cols-1 gap-4">
+                {sponsorsData.fb.map((sponsor) => (
+                  <div key={sponsor.name} className="w-full max-w-xs">
+                    <SponsorCard {...sponsor} />
+                  </div>
+                ))}
+              </div>
+            </motion.div>
+
             {/* Livestream Sponsor */}
             <motion.div variants={itemVariants}>
-              <h3 className="text-2xl md:text-3xl font-bold mb-4 md:mb-6 text-color-gradient drop-shadow-text tracking-wider">
+              {/* ADDED: md:h-20 md:flex md:items-center md:justify-center */}
+              <h3 className="text-2xl md:text-3xl font-bold mb-4 md:mb-6 text-color-gradient drop-shadow-text tracking-wider md:h-20 md:flex md:items-center md:justify-center">
                 Livestream Sponsor
               </h3>
               <div className="flex justify-center">
