@@ -226,7 +226,7 @@ export const PartnerSection = () => {
             <h2 className="text-3xl md:text-4xl font-bold mb-4 md:mb-8 text-gradient-diamond drop-shadow-text tracking-wider">
               Diamond Sponsor
             </h2>
-            <div className="flex justify-center gap-4">
+            <div className="flex justify-center gap-6 md:gap-8">
               {sponsorsData.diamond.map((sponsor) => (
                 <div key={sponsor.name} className="w-full max-w-sm md:max-w-md">
                   <SponsorCard {...sponsor} />
