@@ -32,7 +32,7 @@ export const BackToTopButton = () => {
             height: "60px",
           }}
           onClick={scrollUp}
-          className="rounded-full bg-gradient-to-b from-[#F37D12] to-[#FDE309] flex justify-center items-center"
+          className="rounded-full bg-gradient-to-b from-[#F37D12] to-[#FDE309] flex justify-center items-center z-50"
         >
           <ChevronUp className='w-auto height-full' />
         </button>
