@@ -7,6 +7,10 @@ const DURATION = 0.15;
 const STAGGER = 0.015;
 
 export const HeroSection = () => {
+  const gradientStyle = {
+    background: "linear-gradient(to bottom, #F37D12, #FDE309)",
+  };
+
   return (
     <>
       <div className="max-md:hidden grid grid-cols-2 items-start mb-12 md:px-20">
@@ -65,13 +69,21 @@ export const HeroSection = () => {
             </motion.h1>
 
             <div className="mt-[40px] flex justify-start gap-4">
-              <button className="w-[14vw] h-[48px] bg-gradient-to-b from-[#F37D12] to-[#FDE309] rounded-[12px] justify-items-center flex justify-center items-center text-black font-semibold font-poppins">
+              {/* Desktop Button 1 */}
+              <button 
+                className="w-[14vw] h-[48px] rounded-[12px] justify-items-center flex justify-center items-center text-black font-semibold font-poppins"
+                style={gradientStyle}
+              >
                 <a href="https://bit.ly/RMITHack-A-Venture2025Handbook" target="_blank" className="no-underline">
                   See Handbook
                 </a>
               </button>
 
-              <button className="w-[14vw] h-[48px] bg-gradient-to-b from-[#F37D12] to-[#FDE309] rounded-[12px] justify-items-center flex justify-center items-center text-black font-semibold font-poppins">
+              {/* Desktop Button 2 */}
+              <button 
+                className="w-[14vw] h-[48px] rounded-[12px] justify-items-center flex justify-center items-center text-black font-semibold font-poppins"
+                style={gradientStyle}
+              >
                 {/* <Button /> */}
                 <a href="https://forms.gle/RCp2kr5zheyp2Gq2A" target="_blank">
                   Register Now
@@ -124,13 +136,21 @@ export const HeroSection = () => {
         </div>
 
         <div className="flex w-full gap-5 justify-center items-center">
-          <button className="w-full h-[48px] bg-gradient-to-b from-[#F37D12] to-[#FDE309] rounded-[12px] justify-items-center flex justify-center items-center text-[#000000] font-semibold font-poppins">
+          {/* Mobile Button 1 */}
+          <button 
+            className="w-full h-[48px] rounded-[12px] justify-items-center flex justify-center items-center text-[#000000] font-semibold font-poppins"
+            style={gradientStyle}
+          >
             <a href="https://bit.ly/RMITHack-A-Venture2025Handbook" target="_blank" className="no-underline">
               See Handbook
             </a>
           </button>
 
-          <button className="w-full h-[48px] bg-gradient-to-b from-[#F37D12] to-[#FDE309] rounded-[12px] justify-items-center flex justify-center items-center text-[#000000] font-semibold font-poppins">
+          {/* Mobile Button 2 */}
+          <button 
+            className="w-full h-[48px] rounded-[12px] justify-items-center flex justify-center items-center text-[#000000] font-semibold font-poppins"
+            style={gradientStyle}
+          >
             {/* <Button /> */}
             <a href="https://forms.gle/RCp2kr5zheyp2Gq2A" target="_blank">
               Register Now

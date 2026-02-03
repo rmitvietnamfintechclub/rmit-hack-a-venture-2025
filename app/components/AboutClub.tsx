@@ -73,7 +73,7 @@ export const AboutClub = () => {
     infinite: true,
     speed: 500,
     slidesToShow: 1,
-    autoplay: true, 
+    autoplay: true,
     autoplaySpeed: 5000,
   };
 
@@ -125,7 +125,10 @@ export const AboutClub = () => {
               {coreActivities.map((activity) => (
                 <div
                   key={activity}
-                  className="bg-gradient-to-b from-[#F37D12] to-[#FDE309] px-2 py-3 text-center text-black text-base md:text-sm"
+                  style={{
+                    background: "linear-gradient(to bottom, #F37D12, #FDE309)",
+                  }}
+                  className="px-2 py-3 text-center text-black text-base md:text-sm"
                 >
                   {activity}
                 </div>
@@ -196,7 +199,7 @@ export const AboutClub = () => {
             <span className="text-xl font-semibold text-[#9CA3AF] md:mt-[32px] mt-2 md:mb-0 mb-[10px]">
               {stat.label}
             </span>
-            <hr className="text-[#91DAAE] h-[10px] w-[30vw] block md:hidden"/>
+            <hr className="text-[#91DAAE] h-[10px] w-[30vw] block md:hidden" />
           </div>
         ))}
       </div>

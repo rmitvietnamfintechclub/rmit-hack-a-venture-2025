@@ -307,8 +307,18 @@ export const Countdown = ({ date }: Pick<CountdownProps, "date">) => {
         {isCompleted ? "" : "Countdown before registration closes"}
       </h1>
       {isCompleted ? (
-        <div className="relative h-48 md:h-64 w-full p-px rounded-lg bg-gradient-to-b from-[#F37D12] to-[#FDE309] mb-12 md:mb-16">
-          <div className="flex flex-col items-center justify-center w-full h-full bg-gradient-to-b from-[#10382C] to-[#0A1B15] rounded-[7px] text-center">
+        <div 
+            className="relative h-48 md:h-64 w-full p-px rounded-lg mb-12 md:mb-16"
+            style={{
+                background: "linear-gradient(to bottom, #F37D12, #FDE309)"
+            }}
+        >
+          <div 
+            className="flex flex-col items-center justify-center w-full h-full rounded-[7px] text-center"
+            style={{
+                background: "linear-gradient(to bottom, #10382C, #0A1B15)"
+            }}
+          >
             <IconSpeakerphone
               size={65}
               className="max-md:w-[50px] text-yellow-400 max-md:mb-2 md:mb-4 animate-pulse"

@@ -64,7 +64,12 @@ const LaptopNav = () => {
         >
           Contact Us
         </a>
-        <button className="px-[15px] py-[5px] rounded-2xl bg-gradient-to-b from-[#F37D12] to-[#FDE309] text-white font-semibold">
+        <button
+          style={{
+            background: "linear-gradient(to bottom, #F37D12, #FDE309)",
+          }}
+          className="px-[15px] py-[5px] rounded-2xl text-white font-semibold"
+        >
           <a href="https://forms.gle/RCp2kr5zheyp2Gq2A" target="_blank">
             Register Now
           </a>
@@ -214,10 +219,7 @@ const Navigation = ({
           whileHover={{ scale: 1.1 }}
           whileTap={{ scale: 0.95 }}
         >
-          <a
-            href="/"
-            className={`text-white font-normal cursor-pointer`}
-          >
+          <a href="/" className={`text-white font-normal cursor-pointer`}>
             <h1>About Hack-A-Venture</h1>
           </a>
         </motion.li>
@@ -281,7 +283,12 @@ const Navigation = ({
           whileHover={{ scale: 1.1 }}
           whileTap={{ scale: 0.95 }}
         >
-          <button className="px-[24px] py-[8px] rounded-2xl bg-gradient-to-b from-[#F37D12] to-[#FDE309] text-white font-semibold">
+          <button
+            style={{
+              background: "linear-gradient(to bottom, #F37D12, #FDE309)",
+            }}
+            className="px-[24px] py-[8px] rounded-2xl text-white font-semibold"
+          >
             <a href="https://forms.gle/RCp2kr5zheyp2Gq2A" target="_blank">
               Register Now
             </a>

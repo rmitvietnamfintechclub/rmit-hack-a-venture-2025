@@ -7,7 +7,12 @@ import { MdEmail } from "react-icons/md";
 
 export const Footer = () => {
   return (
-    <footer className="pt-[2px] bg-gradient-to-r from-[#F37D12] to-[#FDE309] gap-[50px] mt-[50px] ">
+    <footer
+      style={{
+        background: "linear-gradient(to right, #F37D12, #FDE309)",
+      }}
+      className="pt-[2px] gap-[50px] mt-[50px] "
+    >
       <div className="bg-[#000000] py-[25px] px-[50px] flex flex-col justify-center items-center">
         <section className="w-full flex flex-col gap-[50px] md:flex-row md:justify-between">
           <SocialMediaList />

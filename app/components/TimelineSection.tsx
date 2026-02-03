@@ -20,8 +20,7 @@ export const TimelineSection = () => {
   );
 };
 
-// --- REFINED DATA ---
-// Removed inconsistent 'dashLineColor' property
+// --- DATA ---
 const roundFormatData = [
   {
     rounded: true,
@@ -47,7 +46,7 @@ const roundFormatData = [
     rounded: true,
     numberOfOrder: 3,
     rightSideOfTextSection: true,
-    timeRangeText: "Jan 21 – Jan 22, 2026", // Corrected year
+    timeRangeText: "Jan 20 – Jan 21, 2026", 
     headline: "HACKDAY & PITCHING",
     subHeadline: "Prototype & Presentation",
     paragraph:
@@ -142,7 +141,12 @@ const TrainingWorkshopTimeline = () => {
 
 const RoundedTimelineHeader: React.FC<{ text: string }> = ({ text }) => {
   return (
-    <div className="text-white text-[20px] md:text-[24px] font-semibold py-2 px-6 rounded-full shadow-md max-md:mt-[24px] md:mt-[30px] bg-gradient-to-r from-[#89D957] to-[#FDE309]">
+    <div 
+        className="text-white text-[20px] md:text-[24px] font-semibold py-2 px-6 rounded-full shadow-md max-md:mt-[24px] md:mt-[30px]"
+        style={{
+            background: "linear-gradient(to right, #89D957, #FDE309)"
+        }}
+    >
       {text}
     </div>
   );
@@ -296,7 +300,10 @@ const TimelineRange: React.FC<{ timeRangeText: string }> = ({
 }) => {
   return (
     <h3
-      className="flex-shrink-0 w-fit p-2 rounded-md bg-gradient-to-r from-[#89D957] to-[#FDE309] text-center text-[16px] md:text-[18px] font-semibold text-white" // FIXED: Consistent gradient and white text
+      className="flex-shrink-0 w-fit p-2 rounded-md text-center text-[16px] md:text-[18px] font-semibold text-white"
+      style={{
+          background: "linear-gradient(to right, #89D957, #FDE309)"
+      }}
     >
       {timeRangeText}
     </h3>
@@ -311,7 +318,12 @@ const DashLine: React.FC<{ rightSide: boolean }> = ({ rightSide }) => {
         !rightSide && "flex-row-reverse"
       )}
     >
-      <div className="w-4 h-4 rounded-full bg-gradient-to-r from-[#F37D12] to-[#FDE309]" />
+      <div 
+        className="w-4 h-4 rounded-full" 
+        style={{
+            background: "linear-gradient(to right, #F37D12, #FDE309)"
+        }}
+      />
       <div
         className="h-1 w-[70px] -z-10"
         style={{
