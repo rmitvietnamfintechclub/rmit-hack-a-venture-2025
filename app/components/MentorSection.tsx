@@ -154,7 +154,7 @@ const MentorItem = (props: MentorInfo & { className?: string }) => {
               }}
             />
           </div>
-          {/* Gradient Line under image */}
+          {/* Gradient Line under image - Converted to Style */}
           <div
             className="absolute bottom-0 left-0 h-[2px] w-full opacity-75 group-hover:opacity-100 group-hover:animate-pulse"
             style={{
@@ -196,11 +196,13 @@ export const MentorSection = () => {
               company={mentor.company}
               image_path={mentor.image_path}
               className={clsx(
-                "w-full sm:w-[calc(50%-1.5rem)] min-w-[220px]",
+                "w-full sm:w-[calc(50%-1.5rem)] min-w-[200px]",
 
                 isRound2
-                  ? "md:w-[calc(33.33%-1.5rem)] lg:w-[calc(30%-1.5rem)]"
-                  : "md:w-[calc(33.33%-1.5rem)] lg:w-[calc(20%-1.6rem)]",
+                  ? 
+                    "md:w-[calc(33.33%-1.5rem)] lg:w-[calc(30%-1.5rem)]"
+                  :
+                    "md:w-[calc(33.33%-1.5rem)] lg:w-[calc(20%-1.6rem)]"
               )}
             />
           ))}
