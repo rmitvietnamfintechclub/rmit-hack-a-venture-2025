@@ -89,7 +89,7 @@ const trainingWorkshopData = [
     rounded: false,
     numberOfOrder: 4,
     rightSideOfTextSection: false,
-    timeRangeText: "Jan 21, 2026",
+    timeRangeText: "Jan 20, 2026",
     headline: "WORKSHOP 04",
     subHeadline: "Pitching Techniques",
     paragraph:
