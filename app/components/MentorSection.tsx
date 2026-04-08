@@ -71,9 +71,9 @@ const allMentors = {
       image_path: "TuanPham-Round3.png",
     },
     {
-      name: "Chiem Quang Tri",
-      title: "Senior Data Scientist",
-      company: "MTI Technology",
+      name: "Chiem Tri Quang",
+      title: "AI Expert",
+      company: "Bosch Global Software Technologies Vietnam",
       image_path: "ChiemQuangTri-Round3.png",
     },
     {
